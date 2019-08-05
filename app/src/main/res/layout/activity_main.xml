@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFFFFFF"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="32dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="16sp"
+        android:text="Saiba qual a melhor opção para abastecer!"
+        android:textColor="@color/colorAccent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/inputGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Valor Gasolina (Ex.: 3.89)"
+            android:inputType="numberDecimal"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp">
+
+        <EditText
+            android:id="@+id/inputAlcool"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Valor Álcool (Ex.: 2.50)"
+            android:inputType="numberDecimal"
+            android:paddingLeft="8dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/botaoCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"/>
+
+
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="28dp"
+        android:textSize="16sp"
+        android:text=""
+        android:textColor="@color/colorAccent" />
+
+
+
+</LinearLayout>
